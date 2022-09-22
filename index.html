@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title> Aiden Kirchmair</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active{
+    background-color: #04aa6d;
+    color: white;
+}
+
+</style>
+<script scr=""></script>
+<body>
+
+
+
+<div class="">
+    <h1> Aiden Kirchmair Bio</h1>
+    <p> This is life</p>
+    <p>Life is awesome.</p>
+</div>
+
+<div class="topnav" id="top">
+    <a class ="#active" href="#top"> Home</a>
+    <a href="#cont">Contact</a>
+    <a href="#am">About</a>
+</div>
+
+<div class="hero-image">
+    <div class="hero-text">
+        <img src="aiden.jpg" alt="LA" style="width:100%;">
+        <h1>I am Aiden Kirchmair</h1>
+        <p>And I am a Programmer</p>
+        <button>Hire Me</button>
+    </div>
+</div>
+
+<style>
+body, html {
+    height: 100%;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5), url("photographer.jpg"));
+
+    height: 50%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    color: white;
+
+}
+</style>
+
+<div class ="about-section" id="am">
+    <h1>About us Page</h1>
+    <p> Some text about who we are and what we do.</p>
+    <p>Resize the browser window to see that this page is responsive by the way.</p>
+</div>
+
+<h2 style = "text-align: center"> Myself </h2>
+<div class ="row">
+    <div class="column">
+        <div class="card">
+            <div class="container">
+                <h2>Aiden Kirchmair</h2>
+                <p class="title"> Software CEO </p>
+                <p>I am an amazing human with skills that are unrivavled on the Human Plane</p>
+                <p>akirchma@uwo.ca</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
+    html {
+        box-sizing: border-box;
+    }
+    *,*:before, *:after {
+        box-sizing: inherit;
+    }
+    .column{
+        float:left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+    }
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(red, green, blue, alpha)
+        margin: 8px;
+    }
+    .about-section{
+        padding: 50px;
+        text-align: center;
+        background-color: #474e5d;
+        color: white;
+    }
+    .container {
+        padding: 0 16px;
+    }
+    .container::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .title {
+        color: grey;
+    }
+    .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background: color #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%
+    }
+    .button:hover{
+        background-color: #555;
+    }
+    @media screen and (max-width: 650px){
+        .column {
+            width: 100%
+            display: block;
+        }
+    }
+</style>
+
+<div class="container" id="cont">
+    <div style="text-align:center">
+    <h2> Contact Me</h2>
+    <p>Come over to chat, or leave us a message:</p>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="western.jpg" style="width:100%";>
+        </div>
+        <div class="column">
+            <form action="/action_page.php">
+                <label for="fname"> First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="Canada"> Canada </option>
+                    <option value="Australia">Australia</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                </select>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    </div>
+</div>
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+    
+</style>
+
+
+
+</body>
+</html>
